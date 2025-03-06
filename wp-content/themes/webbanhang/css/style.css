@@ -1,0 +1,270 @@
+body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+span {
+    font-size: 16px !important;
+    color: #3B3B3B;
+}
+.fs-11 {
+    font-size: 11px !important;
+}
+.fs-13 {
+    font-size: 13px !important;
+}
+.fs-14 {
+    font-size: 14px !important;
+}
+.fs-16 {
+    font-size: 16px !important;
+}
+.fs-18 {
+    font-size: 18px !important;
+}
+.fs-24 {
+    font-size: 24px !important;
+}
+.color-text-default {
+    color: #3B3B3B;
+}
+.color-text-blue {
+    color: #1084E7;
+}
+.shop-info-general {
+    height: 50px;
+    background-color: #e8e8e8;
+}
+.location-selected {
+    background-color: #cdcdcd;
+    width: 218px;
+    margin-left: 30px;
+}
+
+.shop-info-general-phone {
+    border: 2px solid #ffb500;
+    border-radius: 50rem !important;
+    padding: 10px;
+}
+
+.logo-shop {
+    height: 48px;
+}
+.input-search {
+    height: 48px;
+    background-color: #E8E8E8;
+    width: 80%;
+}
+.btn-search {
+    height: 48px;
+    background-color: #1084E7;
+    color: white;
+    &:hover {
+        background-color: #FFB500; 
+        color: white;
+    }
+}
+
+.btn-register {
+    height: 48px;
+    color: white;
+    background-color: #FFB500;
+    &:hover {
+        background-color: #FFB500; 
+        color: white;
+    } 
+}
+
+.items-number-card {
+    background-color: #FFB500;
+    border-radius: 50%;
+    padding: 2px 8px;
+    right: -12px;
+    top: -10px;
+}
+
+.shop-category {
+    background-color: #1084E7;
+    height: 60px;
+}
+
+.menu-category-wraper {
+    background-color: #FFB500;
+    color: white;
+}
+.row-category {
+    height: 60px;
+    span {
+        color: white !important;
+        font-weight: bold;
+    }
+    
+}
+.policy-image {
+    width: 51px;
+    height: 26px;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+}
+
+/* Ký hiệu '>' khi có menu con */
+.menu-item {
+    position: relative;
+}
+.menu-item > .item-parent {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: #3B3B3B;
+    font-size: 15px;
+    &:hover {
+        color: #0056b3;
+    }
+}
+.menu-item .arrow {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* Định vị menu con bên phải, thêm hiệu ứng */
+.submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #0056b3;
+    padding: 10px;
+    width: 300px;
+    display: none;
+    border: 1px solid white;
+    z-index: 20;
+    
+    /* Thêm hiệu ứng */
+    opacity: 0;  /* Mặc định ẩn */
+    transform: translateX(-20px); /* Dịch sang trái 20px */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hiển thị menu con khi hover */
+.menu-item:hover .submenu {
+    display: block;
+    opacity: 1;  /* Hiện menu */
+    transform: translateX(0); /* Di chuyển về vị trí ban đầu */
+}
+
+.carousel-inner {
+    height: 346px;
+    position: relative;
+    overflow: hidden;
+    /* border: 8px solid #fff; 
+    border-radius: 10px;
+    padding: 5px;  */
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px; /* Bo tròn góc cho ảnh */
+}
+
+.product-flash-sale {
+    background-image: linear-gradient(to right, #014ac7, #00a2ff);
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3B3B3B;
+}
+
+.card-text {
+    height: 40px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    color: #3B3B3B;
+}
+
+.price-amount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1084E7;
+}
+
+.old-amount {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.btn-add-card-wraper {
+    background-color: #FFB500;
+    border-radius: 5px;
+}
+
+.btn-add-card {
+    color: white;
+    &:hover {
+        background-color: #FFB500; 
+        color: white;
+    }
+}
+.product-flash-sale-item {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+}
+.discount-percent {
+    background-image: url('https://thucpham01.themeweb4s.com/templates/fashion02/assets/media/icon/bg-sale.png');
+    padding: 0 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px !important;
+    right: 0;
+    top: 25px;
+}
+
+.img-banner-wraper {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.img-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px; /* Bo tròn góc cho ảnh */
+    padding: 0;
+}
