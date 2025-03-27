@@ -76,12 +76,14 @@ global $product;
 			overflow-x: hidden;
 			scroll-behavior: smooth;
 			transition: transform 0.5s ease-in-out;
+			
 		}
 		.image-gallery-child img {
 			flex: 0 0 auto;
 			width: 150px;
 			height: 100px;
-			margin-right: 10px;
+			border-radius: 5px;
+			margin-right: 3px;
 		}
 	}
 </style>
@@ -104,7 +106,7 @@ global $product;
 			<button class="nav-arrow next" onclick="nextImage()">&#10095;</button>
 		</div>
 	</div>
-	<div class="row mt-3">
+	<div class="row mt-3 ms-2 border">
 		<div class="overflow-hidden">
 			<div class="image-gallery-child" id="imageGallery">
 				<?php

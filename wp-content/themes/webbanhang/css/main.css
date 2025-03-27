@@ -548,3 +548,66 @@ footer .copyright p {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+.custom-product-wrapper {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-meta {
+    font-size: 14px;
+    color: #777;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.sale-price {
+    color: #FF9800;
+}
+
+.regular-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.discount {
+    background: red;
+    color: white;
+    padding: 2px 5px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.product-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.add-to-cart, .buy-now {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    background: orange;
+    color: white;
+}
+
+.buy-now {
+    background: blue;
+    color: white;
+}

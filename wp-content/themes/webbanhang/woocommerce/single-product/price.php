@@ -22,4 +22,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 
 ?>
-<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></p>
+<?php
+    $price_html = $product->get_price_html();
+    $regular_price = $product->get_regular_price();
+    $sale_price = $product->get_sale_price();
+?>
+<div class="price-wrapper">
+    <span class="price-label">Giá sản phẩm:</span>
+    <span class="woocommerce-Price-amount amount"><?php echo $price_html; ?></span>
+</div>

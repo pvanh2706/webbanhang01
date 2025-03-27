@@ -18,5 +18,10 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-echo 'heheehh11';
-the_title( '<h1 class="product_title entry-title">', '</h1>' );
+
+global $product;
+
+the_title( '<h1 class="product_title entry-title border">', '</h1>' );
+?>
+<p>Mã sản phẩm <span><?php echo get_post_meta( get_the_ID(), '_sku', true ); echo get_the_ID(); ?></span> | Tình trạng: <span><?php echo $product ? $product->get_stock_status() : ''; ?></span></p>
+<?php
